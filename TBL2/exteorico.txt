@@ -1,0 +1,37 @@
+1. O que significa polimorfismo?
+
+Polimorfismo é a capacidade de uma mesma operação apresentar comportamentos diferentes dependendo do objeto que a executa.
+
+2. Qual é a função da palavra-chave virtual?
+
+Permitir que um método da classe base possa ser sobrescrito por classes derivadas, fornecendo um comportamento padrão que pode ser alterado.
+
+3. Qual é a função da palavra-chave override?
+
+Indicar que um método da classe derivada está substituindo a implementação do método da classe base.
+
+4. O que acontece ao chamar um método sobrescrito via referência da classe base?
+
+O método executado será o da classe real do objeto, não o da referência.
+Ex: mesmo sendo Veiculo, se for Carro, executa o método do Carro.
+
+5. Diferença entre interface e herança
+Herança: relação de especialização (ex: Carro é um Veículo)
+Interface: contrato que define o que a classe deve fazer (não como)
+6. Por que classe abstrata não pode ser instanciada?
+
+Porque ela serve apenas como modelo/base para outras classes e pode conter métodos sem implementação.
+
+7. Diferença entre método concreto e abstrato
+Concreto: tem implementação
+Abstrato: não tem implementação e deve ser implementado na classe filha
+8. Diferença entre virtual e abstract
+virtual: tem implementação (sobrescrita opcional)
+abstract: não tem implementação (sobrescrita obrigatória)
+9. Por que List<Funcionario> pode armazenar Gerente e Programador?
+
+Porque ambos herdam de Funcionario, então são tratados como o mesmo tipo base (polimorfismo).
+
+10. Principal vantagem do polimorfismo
+
+Facilita manutenção, extensibilidade e reduz código com muitos if/else.
